@@ -88,6 +88,11 @@ Es gibt keine Font-Anfrage an einen Drittanbieter zur Laufzeit.
 
 ## QA vor Merge
 
+Die dependency-freien Regressionstests laufen lokal mit `node --test tests/site.test.cjs`
+und auf Pull Requests über `.github/workflows/check.yml`. Geprüft werden Mailto-Encoding,
+relative Ressourcen/Anker, Demo-/Rechtsmarker und lokale Font-Dateien. Der Workflow
+verändert das Deployment nicht und führt keinen Build-Schritt ein.
+
 Lokal starten und in einem zweiten Terminal prüfen:
 
 ```sh

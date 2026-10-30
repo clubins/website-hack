@@ -1,0 +1,22 @@
+name: Website prüfen
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: JavaScript-Syntax
+        run: node --check assets/js/main.js
+      - name: Relative Pfade, lokale Fonts und Mailto
+        run: node --test tests/site.test.cjs
