@@ -2,6 +2,32 @@
 
 const PILOT_EMAIL = "pilot@clubins.de"; // TODO: vor Go-live echte Adresse eintragen.
 
+// UI strings for both language mirrors; German is the root version and the fallback.
+const UI_STRINGS = {
+  de: {
+    menuOpen: "Menü öffnen",
+    menuClose: "Menü schließen",
+    formIncomplete: "Bitte fülle alle Felder aus; Leerzeichen allein reichen nicht.",
+    formHandoff:
+      "Dein E-Mail-Programm wird angefragt. Noch nichts versendet. Falls es nicht öffnet, richte ein E-Mail-Programm ein oder schreibe an " +
+      PILOT_EMAIL +
+      ".",
+  },
+  en: {
+    menuOpen: "Open menu",
+    menuClose: "Close menu",
+    formIncomplete: "Please fill in every field; whitespace alone is not enough.",
+    formHandoff:
+      "Your email program will be asked to open. Nothing has been sent yet. If it does not open, set up an email program or write to " +
+      PILOT_EMAIL +
+      ".",
+  },
+};
+const uiStrings =
+  UI_STRINGS[
+    (document.documentElement?.lang || "de").slice(0, 2).toLowerCase()
+  ] ?? UI_STRINGS.de;
+
 /** Keep user-entered punctuation inside the encoded subject/body, never mail headers. */
 function buildPilotMailto({ club, name, email }, recipient = PILOT_EMAIL) {
   const subject = `Pilot-Anfrage: ${club.trim()}`;
@@ -23,7 +49,7 @@ function setupNavigation() {
   function setMenu(open, restoreFocus = false) {
     links.hidden = mobile.matches && !open;
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "Menü schließen" : "Menü öffnen");
+    toggle.setAttribute("aria-label", open ? uiStrings.menuClose : uiStrings.menuOpen);
     if (restoreFocus) toggle.focus();
   }
 
@@ -66,7 +92,10 @@ function setupNavigation() {
   });
 
   if (!("IntersectionObserver" in window)) return;
-  const navLinks = [...links.querySelectorAll("a")];
+  // Scroll-spy marks section links only — language links keep their own aria-current.
+  const navLinks = [...links.querySelectorAll("a")].filter(
+    (link) => !link.closest(".lang-switch"),
+  );
   const observer = new IntersectionObserver(
     (entries) => {
       const active = entries.find((entry) => entry.isIntersecting);
@@ -126,20 +155,33 @@ function setupPilotForm() {
     const name = String(data.get("name") ?? "");
     const email = String(data.get("email") ?? "");
     if (![club, name, email].every((value) => value.trim())) {
-      status.textContent =
-        "Bitte fülle alle Felder aus; Leerzeichen allein reichen nicht.";
+      status.textContent = uiStrings.formIncomplete;
       return;
     }
     const mailto = buildPilotMailto({ club, name, email });
-    status.textContent =
-      "Dein E-Mail-Programm wird angefragt. Noch nichts versendet. Falls es nicht öffnet, richte ein E-Mail-Programm ein oder schreibe an " +
-      PILOT_EMAIL +
-      ".";
+    status.textContent = uiStrings.formHandoff;
     window.location.href = mailto;
   });
   submit.disabled = false;
 }
 
+/** Carry the current section anchor over to the other language, exactly once. */
+function withAnchor(href, hash) {
+  return hash && !href.includes("#") ? href + hash : href;
+}
+
+function setupLanguageSwitch() {
+  document.querySelectorAll(".lang-switch a").forEach((link) => {
+    link.addEventListener("click", () => {
+      link.setAttribute(
+        "href",
+        withAnchor(link.getAttribute("href"), window.location?.hash || ""),
+      );
+    });
+  });
+}
+
 setupNavigation();
 setupReveals();
 setupPilotForm();
+setupLanguageSwitch();
