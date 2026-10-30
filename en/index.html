@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clubins — Your venue is humming. Clubins is watching.</title>
+    <meta
+      name="description"
+      content="Sound levels, occupancy, and ambience at a glance. Clubins pairs sensors with real-time data for bars and clubs. Request a pilot today."
+    />
+    <link rel="alternate" hreflang="de" href="../index.html" />
+    <link rel="alternate" hreflang="en" href="index.html" />
+    <link rel="alternate" hreflang="x-default" href="../index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta
+      property="og:title"
+      content="Clubins — Nightlife, finally measurable."
+    />
+    <meta
+      property="og:description"
+      content="Sensors → real-time data → dashboard. For the people behind the night."
+    />
+    <meta property="og:image" content="../assets/img/hero-crowd.webp" />
+    <meta
+      property="og:image:alt"
+      content="Black-and-white club scene with a dancing crowd"
+    />
+    <meta name="theme-color" content="#050505" />
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#inhalt">Skip to content</a>
+    <!-- 01 · Navigation -->
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="wordmark" href="#start" aria-label="Clubins — Home"
+          ><svg viewBox="0 0 24 30" aria-hidden="true">
+            <path
+              d="M12 1 23 15 12 29 1 15Z"
+              fill="none"
+              stroke="currentColor"
+            />
+            <path d="m12 7 6 8-6 8-6-8Z" fill="currentColor" /></svg
+          >clubins</a
+        >
+        <div class="nav-links" id="nav-links">
+          <a href="#produkt">Product</a><a href="#vorteile">Benefits</a
+          ><a href="#preise">Pricing</a><a href="#ueber-uns">About us</a>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <a href="../">DE</a><a href="./" aria-current="true">EN</a>
+          </div>
+        </div>
+        <a class="button nav-cta" href="#preise"
+          >Request a pilot <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Open menu"
+          hidden
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M4 8h16M4 16h16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main id="inhalt">
+      <!-- 02 · Hero -->
+      <section class="hero wrap" id="start" aria-labelledby="hero-title">
+        <span class="eyebrow">For the people behind the night</span>
+        <h1 id="hero-title">
+          Your venue is humming.<br /><em>Clubins is watching.</em>
+        </h1>
+        <p class="hero-copy">
+          You make the night. We make it visible. Sound levels, occupancy, and
+          ambience — in real time, in one place.
+        </p>
+        <a class="button" href="#preise"
+          >Request a pilot <span aria-hidden="true">↗</span></a
+        >
+        <figure class="hero-photo">
+          <img
+            src="../assets/img/hero-crowd.webp"
+            alt="A dancing crowd in the light of a dark club night"
+            width="1600"
+            height="900"
+            fetchpriority="high"
+          />
+          <!-- TODO(CONTENT): Demo metrics from the blueprint; no live connection. -->
+          <span class="photo-caption" aria-hidden="true"
+            >THE NIGHT HAS A LOT TO SAY.</span
+          >
+          <figcaption class="live-badge">
+            <p>LIVE PEEK · DEMO</p>
+            <strong>94 dB <small>412 guests</small></strong>
+          </figcaption>
+        </figure>
+      </section>
+      <!-- 03 · Trust bar -->
+      <section class="trust wrap" id="venues" aria-label="Venue examples">
+        <p class="eyebrow">For clubs with character · fictional venue examples</p>
+        <!-- TODO(CONTENT): Fictional demo wordmarks, not customers or real logos. -->
+        <div class="venue-logos">
+          <span>NACHTWERK</span><span>RAUM 04</span><span>Studio Nord</span
+          ><span>NEBEL</span><span>zwischenraum</span>
+        </div>
+      </section>
+      <!-- 04 · Key metrics -->
+      <section
+        class="metrics wrap"
+        id="einblicke"
+        aria-label="Sample values from one night"
+      >
+        <!-- TODO(CONTENT): All metrics and curves in this section are demo data. -->
+        <div class="metric-grid">
+          <div class="metric">
+            <p>Admissions at a glance</p>
+            <strong>312<span aria-hidden="true">/</span><small>h</small></strong
+            ><svg class="spark" viewBox="0 0 100 30" aria-hidden="true">
+              <path
+                d="m0 24 10-5 10 3 10-11 10 4 10-8 10 5 10-9 10 3 10-5 10 2"
+              />
+            </svg>
+          </div>
+          <div class="metric">
+            <p>Spot bottlenecks</p>
+            <strong>Bar 2: <small>queueing</small></strong
+            ><svg class="spark" viewBox="0 0 100 30" aria-hidden="true">
+              <path d="m0 25 15-3 10 2 10-10 10 3 15-10 10 1 10-4 20-2" />
+            </svg>
+          </div>
+          <div class="metric">
+            <p>Understand sound</p>
+            <strong>96 <small>dB</small></strong
+            ><svg class="spark" viewBox="0 0 100 30" aria-hidden="true">
+              <path
+                d="m0 18 10-4 10 8 10-16 10 10 10-6 10 12 10-17 10 10 10-4 10 7"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="demo-note">
+          Illustrative dashboard values. Not live measurements.
+        </p>
+      </section>
+      <!-- 05 · Features -->
+      <section
+        class="features section wrap"
+        id="vorteile"
+        aria-labelledby="features-title"
+      >
+        <div class="section-heading reveal">
+          <span class="eyebrow">Less gut feeling. More clarity.</span>
+          <h2 id="features-title">
+            You feel the night.<br /><em>Now you can see it too.</em>
+          </h2>
+          <p>
+            The right information when it matters. So your team can stay with
+            the guests.
+          </p>
+        </div>
+        <!-- TODO(CONTENT): Align feature scope and integrations with the pilot offer before launch. -->
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M3 11v6m5-10v14m6-18v22m6-17v12m5-9v6" />
+            </svg>
+            <h3>Live sound</h3>
+            <p>
+              Keep an eye on volume. See levels and know when a room is getting
+              too loud.
+            </p>
+          </article>
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <circle cx="11" cy="8" r="4" />
+              <path
+                d="M3 25v-4a8 8 0 0 1 16 0v4M20 5a4 4 0 0 1 0 8m2 4a6 6 0 0 1 3 5v3"
+              />
+            </svg>
+            <h3>People counter</h3>
+            <p>
+              Understand how your venue fills up. Look at admissions and
+              occupancy together.
+            </p>
+          </article>
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M4 24V14m7 10V9m7 15V4m7 20V1" />
+            </svg>
+            <h3>Revenue insights</h3>
+            <p>
+              Think revenue and footfall together. We will set up your POS data
+              integration during the pilot.
+            </p>
+          </article>
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="m14 2 11 5v8c0 5-6 9-11 11C9 24 3 20 3 15V7Z" />
+              <path d="M14 8v8m0 3v2" />
+            </svg>
+            <h3>Safety alerts</h3>
+            <p>
+              Catch unusual values early. Tune thresholds and hints to fit your
+              operation.
+            </p>
+          </article>
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M3 3v22h22M7 19l6-6 5 2 7-10" />
+            </svg>
+            <h3>Data &amp; insights</h3>
+            <p>
+              Compare nights instead of guessing. Discover patterns in volume,
+              occupancy, and ambience.
+            </p>
+          </article>
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M9 2v7m10-7v7M5 9h18v4a9 9 0 0 1-18 0Zm9 13v5" />
+            </svg>
+            <h3>Simple integration</h3>
+            <p>
+              Bringing sensors, data, and dashboard together. With your team,
+              step by step.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- 06 · Dashboard -->
+      <section
+        class="dashboard-section section wrap"
+        id="produkt"
+        aria-labelledby="dashboard-title"
+      >
+        <div class="section-heading center reveal">
+          <span class="eyebrow">One dashboard. Your whole night.</span>
+          <h2 id="dashboard-title">
+            Everything in view.<br /><em>Without being everywhere.</em>
+          </h2>
+          <p>
+            From the first door opening to the last track. Readings become a
+            picture of how your venue runs.
+          </p>
+        </div>
+        <!-- TODO(CONTENT): Every dashboard figure, time, and chart below is fixed demo data, not a live product view. -->
+        <div
+          class="dashboard reveal"
+          role="group"
+          aria-label="Illustrative dashboard with demo data"
+        >
+          <div class="dashboard-top">
+            <strong
+              >clubins <span aria-hidden="true">/</span> Your night</strong
+            ><span class="tag">Demo dashboard</span>
+          </div>
+          <div class="dashboard-body">
+            <div class="dashboard-stats">
+              <div>
+                <p>Guests</p>
+                <strong>1,284</strong>
+              </div>
+              <div>
+                <p>Revenue</p>
+                <strong>€28,420</strong>
+              </div>
+              <div>
+                <p>Occupancy</p>
+                <strong>82%</strong>
+              </div>
+            </div>
+            <div class="dashboard-charts">
+              <figure>
+                <figcaption class="chart-title">
+                  Guests across the night
+                </figcaption>
+                <svg
+                  class="line-chart"
+                  viewBox="0 0 620 180"
+                  preserveAspectRatio="none"
+                  role="img"
+                  aria-label="Sample curve: the guest count rises until around 2 a.m., then falls."
+                >
+                  <defs>
+                    <linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1">
+                      <stop
+                        offset="0%"
+                        stop-color="#f4f2ec"
+                        stop-opacity=".12"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="#f4f2ec"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    class="grid-line"
+                    d="M0 30h620M0 80h620M0 130h620M0 179h620"
+                  />
+                  <path
+                    d="M0 165C40 160 50 145 75 146S110 100 150 108 205 60 235 68 275 42 310 50 350 12 390 22 425 10 465 35 520 26 550 58 590 60 620 85V180H0Z"
+                    fill="url(#chart-fill)"
+                  />
+                  <path
+                    class="chart-line"
+                    d="M0 165C40 160 50 145 75 146S110 100 150 108 205 60 235 68 275 42 310 50 350 12 390 22 425 10 465 35 520 26 550 58 590 60 620 85"
+                  />
+                </svg>
+                <div class="chart-times" aria-hidden="true">
+                  <span>22:00</span><span>00:00</span><span>02:00</span
+                  ><span>04:00</span><span>06:00</span>
+                </div>
+              </figure>
+              <figure class="donut-chart">
+                <figcaption class="chart-title">Room occupancy</figcaption>
+                <div class="donut">
+                  <div>82%<small>occupied · demo</small></div>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <p class="demo-note">
+          Illustrative view with sample data. Revenue data requires a separate
+          integration.
+        </p>
+      </section>
+      <!-- 07 · How it works -->
+      <section
+        class="steps section wrap"
+        id="ablauf"
+        aria-labelledby="steps-title"
+      >
+        <div class="section-heading reveal">
+          <span class="eyebrow">From your space to your data</span>
+          <h2 id="steps-title">
+            Three steps.<br /><em>A whole new view.</em>
+          </h2>
+        </div>
+        <div class="three-grid">
+          <article class="step reveal">
+            <img
+              src="../assets/img/montage.webp"
+              alt="Mounting a compact sensor on a club wall"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="step-number">01 / SENSORS</span>
+            <h3>We install.</h3>
+            <p>
+              Together we find the right measuring points for your space and
+              set up the sensors.
+            </p>
+          </article>
+          <article class="step reveal">
+            <img
+              src="../assets/img/bar-detail.webp"
+              alt="Black-and-white view of a bar with glasses and reflections of light"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="step-number">02 / CONNECTION</span>
+            <h3>We connect.</h3>
+            <p>
+              The sensors feed their readings into the data pipeline. Single
+              signals become a bigger picture.
+            </p>
+          </article>
+          <article class="step reveal">
+            <img
+              src="../assets/img/hero-crowd.webp"
+              alt="People on a crowded dance floor against the light"
+              width="1600"
+              height="900"
+              loading="lazy"
+            /><span class="step-number">03 / OVERVIEW</span>
+            <h3>You see everything.</h3>
+            <p>
+              The dashboard brings the information together. For decisions in
+              the middle of the night — and after.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- 08 · Sensors -->
+      <section
+        class="sensor section wrap"
+        id="sensorik"
+        aria-labelledby="sensor-title"
+      >
+        <figure class="sensor-photo reveal">
+          <img
+            src="../assets/img/sensor-product.webp"
+            alt="Visualization of a compact black Clubins sensor"
+            width="1200"
+            height="900"
+            loading="lazy"
+          />
+          <figcaption>CLUBINS SENSOR · PRODUCT VISUALIZATION</figcaption>
+        </figure>
+        <div class="reveal">
+          <span class="eyebrow">Small sensors. Big picture.</span>
+          <h2 id="sensor-title">
+            Unobtrusive in the room.<br /><em>Clear in the data.</em>
+          </h2>
+          <p>
+            Volume, occupancy, and ambience — sensors that make your operation
+            visible, not the people in it.
+          </p>
+          <!-- TODO(CONTENT): Concretize sensor features and the privacy concept in the pilot; no certification claims. -->
+          <ul class="sensor-list">
+            <li>
+              <span aria-hidden="true">01</span>
+              <div>
+                <strong>Thresholds in view</strong>
+                <p>Measure levels and ambience, spot anomalies.</p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">02</span>
+              <div>
+                <strong>Anonymous movement patterns</strong>
+                <p>
+                  Understand movement in the room — never identify individual
+                  guests.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">03</span>
+              <div>
+                <strong>Understand occupancy</strong>
+                <p>See where the night thickens.</p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">04</span>
+              <div>
+                <strong>Privacy built in</strong>
+                <p>
+                  Scope of measurement, processing, and retention sorted
+                  together in the pilot.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 09 · About and quotes -->
+      <section
+        class="about section wrap"
+        id="ueber-uns"
+        aria-labelledby="about-title"
+      >
+        <div class="about-intro">
+          <div class="reveal">
+            <span class="eyebrow">About us · Built for the night</span>
+            <h2 id="about-title">
+              Technology in the background.<br /><em>People at the center.</em>
+            </h2>
+            <p>
+              Clubins pairs sensors with real-time data for bars and clubs. We
+              want the people behind the night to understand their operation
+              better — without losing the feel for their venue.
+            </p>
+          </div>
+          <figure class="founder-photo reveal">
+            <img
+              src="../assets/img/founder-portrait.webp"
+              alt="Generated symbolic portrait of a person in a club environment"
+              width="900"
+              height="1100"
+              loading="lazy"
+            />
+            <figcaption>
+              Illustrative image · generated portrait, not an actual team photo
+            </figcaption>
+          </figure>
+        </div>
+        <span class="eyebrow"
+          >How the difference might feel · sample voices</span
+        >
+        <!-- TODO(CONTENT): All quotes, roles, venue names, and portraits below are illustrative placeholders, not customer references. -->
+        <div class="three-grid">
+          <figure class="quote-card reveal">
+            <blockquote>
+              “Finally we can see what we could only feel before.”
+            </blockquote>
+            <figcaption class="quote-author">
+              <img
+                src="../assets/img/avatar-1.webp"
+                alt="Generated symbolic portrait for the sample voice"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <div>
+                <strong>Club management</strong
+                ><span>Nachtwerk · fictional example</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="quote-card reveal">
+            <blockquote>
+              “One glance at the dashboard. And we know where we are needed.”
+            </blockquote>
+            <figcaption class="quote-author">
+              <img
+                src="../assets/img/avatar-2.webp"
+                alt="Generated symbolic portrait for the sample voice"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <div>
+                <strong>Operations lead</strong
+                ><span>Raum 04 · fictional example</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="quote-card reveal">
+            <blockquote>
+              “More clarity for our team. More room for a good night.”
+            </blockquote>
+            <figcaption class="quote-author">
+              <img
+                src="../assets/img/avatar-3.webp"
+                alt="Generated symbolic portrait for the sample voice"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <div>
+                <strong>Events lead</strong
+                ><span>Studio Nord · fictional example</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- 10 · Pricing / pilot CTA -->
+      <section class="pilot wrap" id="preise" aria-labelledby="pilot-title">
+        <img
+          class="pilot-bg"
+          src="../assets/img/crowd-cta.webp"
+          alt=""
+          width="1600"
+          height="900"
+          loading="lazy"
+        />
+        <div class="pilot-grid">
+          <div>
+            <span class="eyebrow">Pricing · Start together in a pilot</span>
+            <h2 id="pilot-title">
+              Nightlife,<br /><em>finally measurable.</em>
+            </h2>
+            <p class="pilot-copy">
+              Let's find out what Clubins can do for your venue. We will settle
+              scope, installation, and terms in a personal conversation. No
+              blanket price promises.
+            </p>
+          </div>
+          <form class="pilot-form" id="pilot-form">
+            <div>
+              <label for="club">Club / Venue</label
+              ><input
+                id="club"
+                type="text"
+                name="club"
+                autocomplete="organization"
+                required
+                maxlength="160"
+              />
+            </div>
+            <div>
+              <label for="name">Your name</label
+              ><input
+                id="name"
+                type="text"
+                name="name"
+                autocomplete="name"
+                required
+                maxlength="120"
+              />
+            </div>
+            <div>
+              <label for="email">Your email address</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                maxlength="254"
+              />
+            </div>
+            <button class="button" type="submit" id="pilot-submit" disabled>
+              Request a pilot <span aria-hidden="true">↗</span>
+            </button>
+            <p class="form-note">
+              Opens your email program. Nothing is sent automatically or stored
+              on this website. Recipient:
+              <span id="pilot-recipient"></span> (placeholder).
+              <a href="privacy.html">Privacy placeholder</a>
+            </p>
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+            <noscript
+              ><p class="form-note">
+                This form needs JavaScript. No data has been sent.
+              </p></noscript
+            >
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- 11 · Footer -->
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <div>
+            <a
+              class="wordmark"
+              href="#start"
+              aria-label="Clubins — back to the top"
+              ><svg viewBox="0 0 24 30" aria-hidden="true">
+                <path
+                  d="M12 1 23 15 12 29 1 15Z"
+                  fill="none"
+                  stroke="currentColor"
+                />
+                <path d="m12 7 6 8-6 8-6-8Z" fill="currentColor" /></svg
+              >clubins</a
+            >
+            <p>For the people behind the night.</p>
+          </div>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#produkt">Product</a><a href="#vorteile">Benefits</a
+            ><a href="#preise">Pricing</a><a href="#ueber-uns">About us</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Clubins</span>
+          <div class="footer-legal">
+            <a href="legal.html">Legal notice</a
+            ><a href="privacy.html">Privacy</a
+            ><!-- TODO(CONTENT): Add social profiles; until then no invented links. --><span
+              class="social-placeholder"
+              role="img"
+              aria-label="Follow social media profiles"
+              ><svg viewBox="0 0 20 20" aria-hidden="true">
+                <rect x="2" y="2" width="16" height="16" rx="5" />
+                <circle cx="10" cy="10" r="4" />
+                <circle cx="15" cy="5" r=".5" /></svg
+              ><svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M3 7v11M3 2v2M8 18V7h4v2c4-4 6-1 6 2v7M12 9v9" /></svg
+            ></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js" defer></script>
+  </body>
+</html>

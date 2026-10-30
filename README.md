@@ -1,6 +1,7 @@
 # Clubins Website
 
-Statischer One-Pager für Clubins — dunkler Editorial-Look, deutsche Copy, kein Build-Step.
+Statischer One-Pager für Clubins — dunkler Editorial-Look, deutsche Copy mit
+idiomatischem englischen Spiegel unter `en/`, kein Build-Step.
 Ziel-URL: https://clubins.github.io/website-hack/
 
 **Load-bearing assumption:** Die Seite soll qualifizierte Pilotanfragen ermöglichen.
@@ -16,6 +17,13 @@ betriebsfähige Entscheidungsdaten (Sensorik → Ingest → Dashboard). Diese Se
 
 - Ein One-Pager (`index.html`) mit Anker-Navigation (Produkt · Vorteile · Preise · Über uns)
   plus `impressum.html` und `datenschutz.html` als klar markierte Platzhalter.
+- Englischer Spiegel unter `en/` (`index.html`, `legal.html`, `privacy.html`) — gleiche
+  Sektionen und IDs, übersetzte Copy, gleiche Demo-Kennzeichnungen.
+- Sprachumschalter DE/EN in der Pill-Nav (`aria-current` markiert die aktive Sprache);
+  jede Seite trägt hreflang-Paare (de ↔ en, `x-default` → de) und og:locale-Alternates.
+- Assets werden geteilt, nicht dupliziert: EN-Seiten binden CSS/JS/Fonts/Bilder über
+  `../assets/…` ein. Die JS-Erweiterung betrifft nur den Sprachumschalter (Anker-Übergabe,
+  sprachabhängige UI-Strings); Deutsch bleibt die Fallback-Sprache.
 - Reines HTML/CSS/vanilla JS — kein Framework, kein Build-Step, keine Cookies, keine Tracker.
 - Fonts (Playfair Display, Inter) sind als WOFF2 im Repo self-hosted; keine externen Requests.
 
@@ -56,14 +64,17 @@ hinterlegt (aktuell `pilot@clubins.de`) und wird vor dem Go-live getauscht.
   sichtbare Tastatur-Fokusse und `prefers-reduced-motion`.
 - `assets/js/main.js`: progressive Navigation, einmalige Scroll-Reveals, reine Funktion
   `buildPilotMailto` und Formular. Keine Speicherung, kein Backend. Ohne JavaScript bleiben
-  Texte/Anker zugänglich; der Formular-Submit bleibt deaktiviert.
+  Texte/Anker zugänglich; der Formular-Submit bleibt deaktiviert. EN-Seiten nutzen
+  sprachabhängige UI-Strings; der Umschalter nimmt den aktuellen Anker mit (`withAnchor`).
 - Demo-Zahlen, fiktive Venues und Beispielstimmen sind zusätzlich sichtbar gekennzeichnet.
   Das generierte Gründerporträt ist ein Symbolbild, kein tatsächliches Teammitglied.
 - Social-Icons sind bewusst nicht verlinkte Platzhalter, bis echte Profile vorliegen.
 - Alle Website-Ressourcen sind relativ referenziert; auch OG-Bildpfad gemäß Blueprint.
   Manche Social-Crawler erwarten absolute OG-Bild-URLs; deren Linkvorschau ist nicht garantiert.
 - Rechtsseiten sind ausdrücklich unvollständige Entwürfe und per `noindex` markiert.
-  Technische Veröffentlichung ist keine rechtliche Go-live-Freigabe.
+  Technische Veröffentlichung ist keine rechtliche Go-live-Freigabe. Die EN-Rechtsseiten
+  verlinken zurück auf die deutschen Originale; bis zur Freigabe bleibt Deutsch die
+  verbindliche Fassung.
 
 ## Quellen der Assets
 

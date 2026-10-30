@@ -256,6 +256,26 @@ p {
   width: 20px;
   vertical-align: middle;
 }
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  border: 1px solid var(--edge);
+  border-radius: var(--radius-pill);
+  padding: 2px;
+}
+.lang-switch a {
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--ink-muted);
+}
+.lang-switch a[aria-current] {
+  color: var(--ink);
+  background: var(--surface-2);
+}
 .hero {
   text-align: center;
   padding-top: 96px;
@@ -860,6 +880,14 @@ p {
   .nav-links a {
     font-size: 15px;
     padding: 12px;
+  }
+  .lang-switch {
+    margin-top: 10px;
+    align-self: flex-start;
+  }
+  .lang-switch a {
+    font-size: 13px;
+    padding: 8px 16px;
   }
   .hero {
     padding-top: 76px;
