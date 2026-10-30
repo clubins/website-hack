@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clubins — Dein Laden läuft. Clubins schaut zu.</title>
+    <meta
+      name="description"
+      content="Lautstärke, Auslastung und Umgebung im Blick. Clubins verbindet Sensorik mit Echtzeit-Daten für Bars und Clubs. Jetzt einen Pilot anfragen."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="de_DE" />
+    <meta
+      property="og:title"
+      content="Clubins — Das Nachtleben, endlich messbar."
+    />
+    <meta
+      property="og:description"
+      content="Sensorik → Echtzeit-Daten → Dashboard. Für die Menschen hinter der Nacht."
+    />
+    <meta property="og:image" content="assets/img/hero-crowd.webp" />
+    <meta
+      property="og:image:alt"
+      content="Schwarz-weiße Clubszene mit tanzender Crowd"
+    />
+    <meta name="theme-color" content="#050505" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#inhalt">Zum Inhalt</a>
+    <!-- 01 · Navigation -->
+    <header class="site-header">
+      <nav class="nav-shell" aria-label="Hauptnavigation">
+        <a class="wordmark" href="#start" aria-label="Clubins — Startseite"
+          ><svg viewBox="0 0 24 30" aria-hidden="true">
+            <path
+              d="M12 1 23 15 12 29 1 15Z"
+              fill="none"
+              stroke="currentColor"
+            />
+            <path d="m12 7 6 8-6 8-6-8Z" fill="currentColor" /></svg
+          >clubins</a
+        >
+        <div class="nav-links" id="nav-links">
+          <a href="#produkt">Produkt</a><a href="#vorteile">Vorteile</a
+          ><a href="#preise">Preise</a><a href="#ueber-uns">Über uns</a>
+        </div>
+        <a class="button nav-cta" href="#preise"
+          >Pilot anfragen <span aria-hidden="true">↗</span></a
+        >
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Menü öffnen"
+          hidden
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M4 8h16M4 16h16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main id="inhalt">
+      <!-- 02 · Hero -->
+      <section class="hero wrap" id="start" aria-labelledby="hero-title">
+        <span class="eyebrow">Für die Menschen hinter der Nacht</span>
+        <h1 id="hero-title">
+          Dein Laden läuft.<br /><em>Clubins schaut zu.</em>
+        </h1>
+        <p class="hero-copy">
+          Du machst die Nacht. Wir machen sie sichtbar. Lautstärke, Auslastung
+          und Umgebung — in Echtzeit, an einem Ort.
+        </p>
+        <a class="button" href="#preise"
+          >Pilot anfragen <span aria-hidden="true">↗</span></a
+        >
+        <figure class="hero-photo">
+          <img
+            src="assets/img/hero-crowd.webp"
+            alt="Tanzende Crowd im Licht einer dunklen Clubnacht"
+            width="1600"
+            height="900"
+            fetchpriority="high"
+          />
+          <!-- TODO(CONTENT): Demo-Kennzahlen aus dem Blueprint; keine Live-Anbindung. -->
+          <span class="photo-caption" aria-hidden="true"
+            >DIE NACHT HAT VIEL ZU ERZÄHLEN.</span
+          >
+          <figcaption class="live-badge">
+            <p>LIVE-EINBLICK · DEMO</p>
+            <strong>94 dB <small>412 Gäste</small></strong>
+          </figcaption>
+        </figure>
+      </section>
+      <!-- 03 · Trust-Leiste -->
+      <section class="trust wrap" id="venues" aria-label="Venue-Beispiele">
+        <p class="eyebrow">Für Clubs mit Charakter · fiktive Venue-Beispiele</p>
+        <!-- TODO(CONTENT): Fiktive Demo-Wortmarken, keine Kunden oder echten Logos. -->
+        <div class="venue-logos">
+          <span>NACHTWERK</span><span>RAUM 04</span><span>Studio Nord</span
+          ><span>NEBEL</span><span>zwischenraum</span>
+        </div>
+      </section>
+      <!-- 04 · Kennzahlen -->
+      <section
+        class="metrics wrap"
+        id="einblicke"
+        aria-label="Beispielwerte aus einer Nacht"
+      >
+        <!-- TODO(CONTENT): Alle Kennzahlen und Kurven dieser Sektion sind Demo-Daten. -->
+        <div class="metric-grid">
+          <div class="metric">
+            <p>Einlass im Blick</p>
+            <strong>312<span aria-hidden="true">/</span><small>h</small></strong
+            ><svg class="spark" viewBox="0 0 100 30" aria-hidden="true">
+              <path
+                d="m0 24 10-5 10 3 10-11 10 4 10-8 10 5 10-9 10 3 10-5 10 2"
+              />
+            </svg>
+          </div>
+          <div class="metric">
+            <p>Engpässe erkennen</p>
+            <strong>Bar 2: <small>Stau</small></strong
+            ><svg class="spark" viewBox="0 0 100 30" aria-hidden="true">
+              <path d="m0 25 15-3 10 2 10-10 10 3 15-10 10 1 10-4 20-2" />
+            </svg>
+          </div>
+          <div class="metric">
+            <p>Sound verstehen</p>
+            <strong>96 <small>dB</small></strong
+            ><svg class="spark" viewBox="0 0 100 30" aria-hidden="true">
+              <path
+                d="m0 18 10-4 10 8 10-16 10 10 10-6 10 12 10-17 10 10 10-4 10 7"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="demo-note">
+          Illustrative Dashboard-Werte. Keine aktuellen Messungen.
+        </p>
+      </section>
+      <!-- 05 · Features -->
+      <section
+        class="features section wrap"
+        id="vorteile"
+        aria-labelledby="features-title"
+      >
+        <div class="section-heading reveal">
+          <span class="eyebrow">Weniger Bauchgefühl. Mehr Überblick.</span>
+          <h2 id="features-title">
+            Du spürst die Nacht.<br /><em>Jetzt siehst du sie auch.</em>
+          </h2>
+          <p>
+            Die richtigen Informationen, wenn es darauf ankommt. Damit dein Team
+            bei den Gästen bleiben kann.
+          </p>
+        </div>
+        <!-- TODO(CONTENT): Funktionsumfang und Integrationen vor Veröffentlichung mit dem Pilotangebot abgleichen. -->
+        <div class="feature-grid">
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M3 11v6m5-10v14m6-18v22m6-17v12m5-9v6" />
+            </svg>
+            <h3>Live-Sound</h3>
+            <p>
+              Lautstärke im Blick behalten. Pegel sehen und erkennen, wann es im
+              Raum zu laut wird.
+            </p>
+          </article>
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <circle cx="11" cy="8" r="4" />
+              <path
+                d="M3 25v-4a8 8 0 0 1 16 0v4M20 5a4 4 0 0 1 0 8m2 4a6 6 0 0 1 3 5v3"
+              />
+            </svg>
+            <h3>People Counter</h3>
+            <p>
+              Verstehen, wie sich dein Laden füllt. Einlass und Auslastung
+              zusammen betrachten.
+            </p>
+          </article>
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M4 24V14m7 10V9m7 15V4m7 20V1" />
+            </svg>
+            <h3>Umsatz-Analyse</h3>
+            <p>
+              Umsatz und Besuch zusammen denken. Die Anbindung deiner
+              Kassendaten klären wir im Pilot.
+            </p>
+          </article>
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="m14 2 11 5v8c0 5-6 9-11 11C9 24 3 20 3 15V7Z" />
+              <path d="M14 8v8m0 3v2" />
+            </svg>
+            <h3>Sicherheits-Alerts</h3>
+            <p>
+              Auffällige Werte früh erkennen. Grenzwerte und Hinweise passend zu
+              deinem Betrieb abstimmen.
+            </p>
+          </article>
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M3 3v22h22M7 19l6-6 5 2 7-10" />
+            </svg>
+            <h3>Daten &amp; Insights</h3>
+            <p>
+              Nächte vergleichen statt raten. Muster in Lautstärke, Auslastung
+              und Umgebung entdecken.
+            </p>
+          </article>
+          <article class="feature reveal">
+            <svg class="feature-icon" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M9 2v7m10-7v7M5 9h18v4a9 9 0 0 1-18 0Zm9 13v5" />
+            </svg>
+            <h3>Einfache Integration</h3>
+            <p>
+              Sensorik, Daten und Dashboard zusammenbringen. Gemeinsam mit
+              deinem Team, Schritt für Schritt.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- 06 · Dashboard -->
+      <section
+        class="dashboard-section section wrap"
+        id="produkt"
+        aria-labelledby="dashboard-title"
+      >
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Ein Dashboard. Deine ganze Nacht.</span>
+          <h2 id="dashboard-title">
+            Alles im Blick.<br /><em>Ohne überall zu sein.</em>
+          </h2>
+          <p>
+            Von der ersten Türöffnung bis zum letzten Track. Aus Messwerten wird
+            ein Bild deines Betriebs.
+          </p>
+        </div>
+        <!-- TODO(CONTENT): Sämtliche Dashboard-Zahlen, Zeiten und Charts sind feste Demo-Daten, kein Produkt-Livebild. -->
+        <div
+          class="dashboard reveal"
+          role="group"
+          aria-label="Illustratives Dashboard mit Demo-Daten"
+        >
+          <div class="dashboard-top">
+            <strong
+              >clubins <span aria-hidden="true">/</span> Deine Nacht</strong
+            ><span class="tag">Demo-Dashboard</span>
+          </div>
+          <div class="dashboard-body">
+            <div class="dashboard-stats">
+              <div>
+                <p>Gäste</p>
+                <strong>1.284</strong>
+              </div>
+              <div>
+                <p>Umsatz</p>
+                <strong>28.420 €</strong>
+              </div>
+              <div>
+                <p>Auslastung</p>
+                <strong>82 %</strong>
+              </div>
+            </div>
+            <div class="dashboard-charts">
+              <figure>
+                <figcaption class="chart-title">
+                  Gäste im Verlauf der Nacht
+                </figcaption>
+                <svg
+                  class="line-chart"
+                  viewBox="0 0 620 180"
+                  preserveAspectRatio="none"
+                  role="img"
+                  aria-label="Beispielkurve: Gästezahl steigt bis etwa 2 Uhr und sinkt danach."
+                >
+                  <defs>
+                    <linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1">
+                      <stop
+                        offset="0%"
+                        stop-color="#f4f2ec"
+                        stop-opacity=".12"
+                      />
+                      <stop
+                        offset="100%"
+                        stop-color="#f4f2ec"
+                        stop-opacity="0"
+                      />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    class="grid-line"
+                    d="M0 30h620M0 80h620M0 130h620M0 179h620"
+                  />
+                  <path
+                    d="M0 165C40 160 50 145 75 146S110 100 150 108 205 60 235 68 275 42 310 50 350 12 390 22 425 10 465 35 520 26 550 58 590 60 620 85V180H0Z"
+                    fill="url(#chart-fill)"
+                  />
+                  <path
+                    class="chart-line"
+                    d="M0 165C40 160 50 145 75 146S110 100 150 108 205 60 235 68 275 42 310 50 350 12 390 22 425 10 465 35 520 26 550 58 590 60 620 85"
+                  />
+                </svg>
+                <div class="chart-times" aria-hidden="true">
+                  <span>22:00</span><span>00:00</span><span>02:00</span
+                  ><span>04:00</span><span>06:00</span>
+                </div>
+              </figure>
+              <figure class="donut-chart">
+                <figcaption class="chart-title">Raumauslastung</figcaption>
+                <div class="donut">
+                  <div>82 %<small>belegt · Demo</small></div>
+                </div>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <p class="demo-note">
+          Illustrative Darstellung mit Beispieldaten. Umsatzdaten setzen eine
+          gesonderte Integration voraus.
+        </p>
+      </section>
+      <!-- 07 · So funktioniert’s -->
+      <section
+        class="steps section wrap"
+        id="ablauf"
+        aria-labelledby="steps-title"
+      >
+        <div class="section-heading reveal">
+          <span class="eyebrow">Von deinem Raum zu deinen Daten</span>
+          <h2 id="steps-title">
+            Drei Schritte.<br /><em>Ein neuer Blick.</em>
+          </h2>
+        </div>
+        <div class="three-grid">
+          <article class="step reveal">
+            <img
+              src="assets/img/montage.webp"
+              alt="Montage eines kompakten Sensors an einer Clubwand"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="step-number">01 / SENSORIK</span>
+            <h3>Wir installieren.</h3>
+            <p>
+              Gemeinsam finden wir die richtigen Messpunkte für deinen Raum und
+              richten die Sensorik ein.
+            </p>
+          </article>
+          <article class="step reveal">
+            <img
+              src="assets/img/bar-detail.webp"
+              alt="Schwarz-weißer Blick auf eine Bar mit Gläsern und Lichtreflexen"
+              width="1200"
+              height="900"
+              loading="lazy"
+            /><span class="step-number">02 / VERBINDUNG</span>
+            <h3>Wir verbinden.</h3>
+            <p>
+              Die Sensoren liefern ihre Messwerte an die Datenpipeline. Aus
+              einzelnen Signalen wird ein Zusammenhang.
+            </p>
+          </article>
+          <article class="step reveal">
+            <img
+              src="assets/img/hero-crowd.webp"
+              alt="Menschen auf einer vollen Tanzfläche im Gegenlicht"
+              width="1600"
+              height="900"
+              loading="lazy"
+            /><span class="step-number">03 / ÜBERBLICK</span>
+            <h3>Du siehst alles.</h3>
+            <p>
+              Im Dashboard laufen die Informationen zusammen. Für Entscheidungen
+              mitten in der Nacht und danach.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- 08 · Sensorik -->
+      <section
+        class="sensor section wrap"
+        id="sensorik"
+        aria-labelledby="sensor-title"
+      >
+        <figure class="sensor-photo reveal">
+          <img
+            src="assets/img/sensor-product.webp"
+            alt="Visualisierung eines kompakten schwarzen Clubins-Sensors"
+            width="1200"
+            height="900"
+            loading="lazy"
+          />
+          <figcaption>CLUBINS SENSOR · PRODUKTVISUALISIERUNG</figcaption>
+        </figure>
+        <div class="reveal">
+          <span class="eyebrow">Kleine Sensoren. Große Zusammenhänge.</span>
+          <h2 id="sensor-title">
+            Unauffällig im Raum.<br /><em>Klar in den Daten.</em>
+          </h2>
+          <p>
+            Lautstärke, Auslastung und Umgebung — Sensorik, die den Betrieb
+            sichtbar macht, nicht die Menschen dahinter.
+          </p>
+          <!-- TODO(CONTENT): Sensorfunktionen und Datenschutzkonzept im Pilot konkretisieren; keine Zertifizierungsbehauptung. -->
+          <ul class="sensor-list">
+            <li>
+              <span aria-hidden="true">01</span>
+              <div>
+                <strong>Grenzwerte im Blick</strong>
+                <p>Pegel und Umgebung messen, Auffälligkeiten erkennen.</p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">02</span>
+              <div>
+                <strong>Anonyme Bewegungsprofile</strong>
+                <p>
+                  Bewegungen im Raum verstehen — nicht einzelne Gäste
+                  identifizieren.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">03</span>
+              <div>
+                <strong>Raumauslastung verstehen</strong>
+                <p>Sehen, wo sich die Nacht verdichtet.</p>
+              </div>
+            </li>
+            <li>
+              <span aria-hidden="true">04</span>
+              <div>
+                <strong>Datenschutz mitdenken</strong>
+                <p>
+                  Messumfang, Verarbeitung und Aufbewahrung gemeinsam im Pilot
+                  klären.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 09 · Über uns und Zitate -->
+      <section
+        class="about section wrap"
+        id="ueber-uns"
+        aria-labelledby="about-title"
+      >
+        <div class="about-intro">
+          <div class="reveal">
+            <span class="eyebrow">Über uns · Für die Nacht gemacht</span>
+            <h2 id="about-title">
+              Technik im Hintergrund.<br /><em>Menschen im Mittelpunkt.</em>
+            </h2>
+            <p>
+              Clubins verbindet Sensorik mit Echtzeit-Daten für Bars und Clubs.
+              Wir wollen den Menschen hinter der Nacht helfen, ihren Betrieb
+              besser zu verstehen — ohne das Gefühl für ihren Laden zu
+              verlieren.
+            </p>
+          </div>
+          <figure class="founder-photo reveal">
+            <img
+              src="assets/img/founder-portrait.webp"
+              alt="Generiertes Symbolporträt einer Person in einer Clubumgebung"
+              width="900"
+              height="1100"
+              loading="lazy"
+            />
+            <figcaption>
+              Symbolbild · generiertes Porträt, kein tatsächliches Teamfoto
+            </figcaption>
+          </figure>
+        </div>
+        <span class="eyebrow"
+          >So könnte sich der Unterschied anfühlen · Beispielstimmen</span
+        >
+        <!-- TODO(CONTENT): Alle folgenden Zitate, Rollen, Venue-Namen und Porträts sind illustrative Platzhalter, keine Kundenreferenzen. -->
+        <div class="three-grid">
+          <figure class="quote-card reveal">
+            <blockquote>
+              „Endlich sehen wir, was wir sonst nur im Gefühl hatten.“
+            </blockquote>
+            <figcaption class="quote-author">
+              <img
+                src="assets/img/avatar-1.webp"
+                alt="Generiertes Symbolporträt für die Beispielstimme"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <div>
+                <strong>Clubmanagement</strong
+                ><span>Nachtwerk · fiktives Beispiel</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="quote-card reveal">
+            <blockquote>
+              „Ein Blick aufs Dashboard. Und wir wissen, wo wir gebraucht
+              werden.“
+            </blockquote>
+            <figcaption class="quote-author">
+              <img
+                src="assets/img/avatar-2.webp"
+                alt="Generiertes Symbolporträt für die Beispielstimme"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <div>
+                <strong>Betriebsleitung</strong
+                ><span>Raum 04 · fiktives Beispiel</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="quote-card reveal">
+            <blockquote>
+              „Mehr Überblick für unser Team. Mehr Raum für eine gute Nacht.“
+            </blockquote>
+            <figcaption class="quote-author">
+              <img
+                src="assets/img/avatar-3.webp"
+                alt="Generiertes Symbolporträt für die Beispielstimme"
+                width="400"
+                height="400"
+                loading="lazy"
+              />
+              <div>
+                <strong>Veranstaltungsleitung</strong
+                ><span>Studio Nord · fiktives Beispiel</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <!-- 10 · Preise / Pilot-CTA -->
+      <section class="pilot wrap" id="preise" aria-labelledby="pilot-title">
+        <img
+          class="pilot-bg"
+          src="assets/img/crowd-cta.webp"
+          alt=""
+          width="1600"
+          height="900"
+          loading="lazy"
+        />
+        <div class="pilot-grid">
+          <div>
+            <span class="eyebrow">Preise · Gemeinsam im Pilot starten</span>
+            <h2 id="pilot-title">
+              Das Nachtleben,<br /><em>endlich messbar.</em>
+            </h2>
+            <p class="pilot-copy">
+              Lass uns herausfinden, was Clubins für deinen Laden tun kann.
+              Umfang, Installation und Konditionen stimmen wir im persönlichen
+              Gespräch ab. Keine pauschalen Preisversprechen.
+            </p>
+          </div>
+          <form class="pilot-form" id="pilot-form">
+            <div>
+              <label for="club">Club / Venue</label
+              ><input
+                id="club"
+                type="text"
+                name="club"
+                autocomplete="organization"
+                required
+                maxlength="160"
+              />
+            </div>
+            <div>
+              <label for="name">Dein Name</label
+              ><input
+                id="name"
+                type="text"
+                name="name"
+                autocomplete="name"
+                required
+                maxlength="120"
+              />
+            </div>
+            <div>
+              <label for="email">Deine E-Mail-Adresse</label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                maxlength="254"
+              />
+            </div>
+            <button class="button" type="submit" id="pilot-submit" disabled>
+              Pilot anfragen <span aria-hidden="true">↗</span>
+            </button>
+            <p class="form-note">
+              Öffnet dein E-Mail-Programm. Es wird nichts automatisch versendet
+              oder auf dieser Website gespeichert. Empfänger:
+              <span id="pilot-recipient"></span> (Platzhalter).
+              <a href="datenschutz.html">Datenschutz-Platzhalter</a>
+            </p>
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+            <noscript
+              ><p class="form-note">
+                Für das Formular bitte JavaScript aktivieren. Es wurden keine
+                Daten gesendet.
+              </p></noscript
+            >
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- 11 · Footer -->
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <div>
+            <a
+              class="wordmark"
+              href="#start"
+              aria-label="Clubins — zurück zum Anfang"
+              ><svg viewBox="0 0 24 30" aria-hidden="true">
+                <path
+                  d="M12 1 23 15 12 29 1 15Z"
+                  fill="none"
+                  stroke="currentColor"
+                />
+                <path d="m12 7 6 8-6 8-6-8Z" fill="currentColor" /></svg
+              >clubins</a
+            >
+            <p>Für die Menschen hinter der Nacht.</p>
+          </div>
+          <nav class="footer-nav" aria-label="Footernavigation">
+            <a href="#produkt">Produkt</a><a href="#vorteile">Vorteile</a
+            ><a href="#preise">Preise</a><a href="#ueber-uns">Über uns</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Clubins</span>
+          <div class="footer-legal">
+            <a href="impressum.html">Impressum</a
+            ><a href="datenschutz.html">Datenschutz</a
+            ><!-- TODO(CONTENT): Social-Profile ergänzen; bis dahin keine erfundenen Links. --><span
+              class="social-placeholder"
+              role="img"
+              aria-label="Social-Media-Profile folgen"
+              ><svg viewBox="0 0 20 20" aria-hidden="true">
+                <rect x="2" y="2" width="16" height="16" rx="5" />
+                <circle cx="10" cy="10" r="4" />
+                <circle cx="15" cy="5" r=".5" /></svg
+              ><svg viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M3 7v11M3 2v2M8 18V7h4v2c4-4 6-1 6 2v7M12 9v9" /></svg
+            ></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
